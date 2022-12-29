@@ -1,12 +1,17 @@
 window.addEventListener('load', () => {
 	document.getElementById('form').addEventListener('submit', function(event) {
 		event.preventDefault();
-	  
+
 		const input = document.getElementById('input').value;
-	  
+
+		const body = {
+			input,
+			location: window.location.pathname
+		}
+
 		fetch('/process-input', {
 		  method: 'POST',
-		  body: JSON.stringify({ input }),
+		  body: JSON.stringify(body),
 		  headers: {
 			'Content-Type': 'application/json'
 		  }
@@ -19,4 +24,3 @@ window.addEventListener('load', () => {
 		});
 	});
 })
-

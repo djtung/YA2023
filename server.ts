@@ -14,11 +14,17 @@ app.get('/', (req, res) => {
 
 app.post('/process-input', (req, res) => {
     const input = req.body.input.toLowerCase();
+    const locationRaw = req.body.location.split("/");
+    const location = locationRaw[locationRaw.length - 1];
 
     if (consts.ROUTES.hasOwnProperty(input)) {
         res.redirect(`/${consts.ROUTES[input]}.html`);
     } else {
-      res.redirect(`/error.html`);
+      if (!location) {
+        res.redirect(`/errors/generic.html`);
+      } else {
+        res.redirect(`/errors/${location}`);
+      }
     }
 });
 
