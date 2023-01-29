@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Airport</h1>
+      <div class="center">
+        <span class="type" style="--n:566">You and Emma arrive at the airport. It's bustling with activity, as travelers from all over the world rushed to and from their flights.
+          
+          You walk through the terminal, luggage in tow, the sound of announcements and the chatter of people filling the air. Emma couldn't help but feel a sense of nervousness and excitement as you make your way through.
+        
+          The airport is large and modern, with sleek marble floors and high ceilings. You get the feeling that you may not be able to find your gate and that you'll miss your flight.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+          <span class="txt">To board the plane, you need to check in with the information on your ticket in the following order:
+
+            - Flight number, Gate, Departure point (as airport code), and Desination (as airport code). Enter as one word.
+          </span>
+          <img src="assets/cat.jpg" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

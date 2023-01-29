@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Throne</h1>
+      <div class="center">
+        <span class="type" style="--n:930">You place the last piece in the corner of the tablet, now revealing the carefully carved image in the stone. "The craftsmanship... amazing", Emma says, awestruck. Placing the pieces in the right configuration allowed you to push the carving in like a key, revealing another door next to the tablet.
+        
+        Walking through, you enter a large chamber and see a large throne near the back. The room was ornately decorated, with intricate carvings and mosaics covering the walls and floors. The ceiling of the chamber was high, with large arched windows that let in a soft, natural light. It was clear that this was once a throne room for an emperor who had ruled over this ancient kingdom.
+    
+        You inspect the throne. It was made of a dark, polished wood and adorned with gold and silver inlays. On the side, you can see large buttons which could still be pressed. You decide to look around the room for clues.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">As you look around the room, Emma calls you over. "I've found something! Take a look at this." There is an ancient scroll with the following information:
+
+            TENTS:
+                - PAIR EACH TREE WITH A TENT ADJACENT HORIZONTALLY OR VERTICALLY. THIS SHOULD BE A 1 TO 1 RELATION.
+                - TENTS NEVER TOUCH EACH OTHER EVEN DIAGONALLY
+                - THE CLUES OUTSIDE THE GRID INDICATE THE NUMBER OF TENTS ON THAT ROW/COLUMN
+                - ENTER THE ANSWER AS TENT COORDINATES, FROM BOTTOM TO TOP, LEFT TO RIGHT
+
+            </span>
+            <img src="assets/tents.jpg" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

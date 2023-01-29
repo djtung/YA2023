@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Rooftop</h1>
+      <div class="center">
+        <span class="type" style="--n:747">You quickly get to work, fashioning the pieces of wood together to form a crude ladder. Emma ties the rope around the rungs to secure it and then threw the rope up to the windows. It was a difficult climb, and your arms ached from the effort, but you finally reach the top. Emma follows close behind you, and you both climb out onto the roof. You take a moment, lying on the floor, exhausted. She breathes a sigh of relief as you look out at the beautiful view of the ancient city.
+        
+        The air begins to cool around you as you see the setting sun beyond the horizon. You're finally safe, and in front of you on the rooftop there is a large treasure chest. It was surprisingly well kept despite the age and weathering over the years.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">You spot an inscryption on the chest which describes the way to open it.
+
+            "Arrange the remaining digits from 1-16 to form a magic square where each horizontal, vertical, and corner to corner line totals 34."
+
+            "Input the numbers row by row, starting from top to bottom."
+            </span>
+
+            <img src="assets/magicSquarePuzzle.jpg" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Cassette</h1>
+      <div class="center">
+        <span class="type" style="--n:637">You enter the combination into the lock and it opens with a loud click, as if it was just locked yesterday. You push open the door that was behind the lock, and the tunnel continues deeper into the earth.
+
+        The tunnel was dark and damp, you and Emma feel the chill of the underground air. You walk for what feels like hours, the only light coming from your flashlight beams.
+
+        Finally you reach a large opening, but there doesn't seem to be anywhere else to go. However, you do see intricate carved letters on the wall which look like they can be pressed. To your right, there is a small casette player.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">On the cassette tape you can see the following written on it:
+
+            A - Love on the Line
+            B - Goodness of God
+            C - King of Kings
+            D - Open Heaven
+            E - The Passion
+            F - Another in the Fire
+            G - What a Beautiful Name
+            H - Highlands
+            I - Worthy of it All
+            J - God I look to You
+
+            "It looks like the letters match up with the buttons on the wall", Emma says. "Let's try putting them in the order that we hear the songs".
+            </span>
+            <audio controls>
+                <source src="assets/songPuzzle.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

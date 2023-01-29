@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The City</h1>
+      <div class="center">
+        <span class="type" style="--n:770">As you arrived in Sao Paulo, you were immediately struck by the vibrant energy of the city. The streets were filled with people, music and the smell of delicious food. The colorful buildings and breathtaking views of the ocean and mountains made the city feel alive and full of opportunity.
+        
+        You make your way to the designated location on the map, a large historical building in the city center. As you enter the building, you are greeted with the sight of grand marble staircases, intricate mosaics and beautiful frescoes. "This must be the place", Emma remarks.
+    
+        You wander around the building, carefully looking around for anything out of place. "Take a look at this," Emma says as she points you to a hidden door near the back rooms.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">There's a clue next to a keypad by the door:
+
+            1. ORDER THE COUNTRIES FLAGS IN ALPHABETICAL ORDER
+            2. ENTER THE PASSWORD
+
+            </span>
+            <img src="assets/flagPuzzle.png" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Tunnel</h1>
+      <div class="center">
+        <span class="type" style="--n:643">You enter 'envelope' into the console and at first nothing seems to happen. Suddenly, you hear a faint rumbling which grows louder and louder as the stone in front of you rolls over, exposing a dark tunnel.
+        
+        You step into the tunnel, Emma following in tow. The walls were made of rough-hewn stone. You and Emma can feel a chill in the air as you walk through it.
+        
+        Finally, as you reach the end, you see a small table carved in the middle of a small room. On it is a marked chess board, though many of the pieces are missing. In the corner of the room, there is a large combination lock taking 12 characters.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">On the table next to the chess board is a small piece of paper with instructions, barely legible due to the age of the note.
+
+              "Place the pieces in such a way that the marked numbers are the number of times the square is attacked by the pieces. Then, enter the piece positions from bottom to top, left to right in algebraic notation."
+
+              "For example, the current configuration of pieces is Ba3Ra4Ra5Na6"
+
+              "B = Bishop. R = Rook. N = Knight."
+            </span>
+            <img src="assets/chedoku.PNG" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

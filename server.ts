@@ -13,12 +13,17 @@ app.get('/', (req, res) => {
 });
 
 app.post('/process-input', (req, res) => {
-    const input = req.body.input.toLowerCase();
+    const input = req.body.input.toLowerCase().trim();
     const locationRaw = req.body.location.split("/");
     const location = locationRaw[locationRaw.length - 1];
 
-    if (consts.ROUTES.hasOwnProperty(input)) {
-        res.redirect(`/${consts.ROUTES[input]}.html`);
+    const matchingRoute = consts.ROUTES.find(route => {
+      const answerMatches = route.answer.some(answer => answer.toLowerCase() === input);
+      return answerMatches && route.current === location
+    });
+
+    if (matchingRoute) {
+        res.redirect(`/${matchingRoute.next}.html`);
     } else {
       if (!location) {
         res.redirect(`/errors/generic.html`);

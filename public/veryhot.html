@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Ruins</h1>
+      <div class="center">
+        <span class="type" style="--n:1106">As you flew over the sparkling blue waters of the Persian Gulf, Emma gazed out of the window at the landscape below. She saw the sprawling metropolis of Qatar's capital, Doha, with its towering skyscrapers and bustling streets. She also saw the vast deserts that stretched out beyond the city, seemingly endless expanses of sand dunes that seemed to go on forever.
+        
+        You step out of the airport, feeling the heat hit like a wall. The sun was shining bright and the temperature was sweltering, it felt like stepping into an oven.
+    
+        You and Emma make your way out of the town and into the middle of the desert towards the marked location on the map. In the distance you can see some ancient ruins. Getting closer, you feel the energy and history around you as you imagine the people who had built and inhabited these ruins so long ago.
+    
+        After a few minutes of searching, Emma's fingers brushed against a small, almost imperceptible lever hidden in the crack. She pulled it, and with a loud grinding noise, a section of the wall swung open to reveal a hidden vault.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">Inside the first room of the vault you find an old radio next to a telegraph sounder. You find the switch which powers on the radio, and get the feeling that you should try to enter the message into the morse code sounder.
+
+            </span>
+            <audio controls>
+                <source src="assets/morse.mp3" type="audio/mp3">
+            </audio>
+            <img src="assets/morse.png" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

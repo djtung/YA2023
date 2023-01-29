@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Cabin</h1>
+      <div class="center">
+        <span class="type" style="--n:618">After a long flight, you and Emma finally arrive in Russia. You rent a car and drive for hours to the marked location, the vast white expanse of the Russian tundra stretching out as far as the eye can see.
+
+          Emma couldn't help but feel a sense of awe as she took in the beauty of the snowy landscape. The snow was deep and untouched, and the only sign of civilization were the faint tire tracks on the road.
+
+          You stop at a remote cabin that seems abandoned, but after searching you find a hidden door that leads underground. Inside, a vault has been carved out of the solid rock.</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">You see the following carving in the rock, right above a protruding keypad. It seems the puzzle will give the answer to open the vault.
+
+            Hint: One word.</span>
+            <img src="assets/mazePuzzle.jpg" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

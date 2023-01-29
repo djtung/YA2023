@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="nav.js"></script>
+    <script src="candy.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The First Box</h1>
+      <div class="center">
+        <span class="type" style="--n:610">You and Emma use the ropes and harnesses you brought to cross the gap, the old wood creaking as you step over the chasm. The air was damp from the rushing water far below you, too dark to see but just loud enough to hear.
+        
+        It isn't much further past the gap where you see the end of the cave, and right in front of you is an ornate treasure chest with an old lock. Emma was filled with a sense of excitement and accomplishment as she looked at the treasure. She couldn't believe that you had actually found it.
+      
+        "This is it!" Emma exclaims. "But how should we open the chest"?</span>
+        <div>
+          <button onclick="showHide()">Show/Hide</button>
+        </div>
+        <div id="showHide" style="display: none">
+            <span class="txt">You see the following written on the chest:
+
+            "F7 + BC = ???"
+
+            Emma looks at the clues inquisitively, and turns to you with excitement. "These are hex numbers. They're the same as our regular numbers in base 10 but in base 16. Let's try adding the two numbers together."</span>
+            <img src="assets/hexTable2.PNG" />
+        </div>
+        <form id="form">
+          <input type="text" id="input" placeholder="Enter text here">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
