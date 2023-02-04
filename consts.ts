@@ -32,7 +32,7 @@ module.exports = Object.freeze({
         },
         // Russia 3
         {
-            answer: ["bf1re2rf2ng5"],
+            answer: ["Qh7"],
             next: "namethatsong",
             current: "carlsen.html"
         },
@@ -50,7 +50,7 @@ module.exports = Object.freeze({
         },
         // Russia 6
         {
-            answer: ["1b3"],
+            answer: ["11001"],
             next: "socold",
             current: "hardone.html"
         },
