@@ -20,7 +20,7 @@ module.exports = Object.freeze({
         },
         // Russia 1
         {
-            answer: ["dme"],
+            answer: ["aa1387syvrdme"],
             next: "withlove",
             current: "letsfly.html"
         },
@@ -44,7 +44,7 @@ module.exports = Object.freeze({
         },
         // Russia 5
         {
-            answer: ["trailblazer"],
+            answer: ["trailblazer", "trail blazer"],
             next: "hardone",
             current: "goldengate.html"
         },
@@ -56,7 +56,7 @@ module.exports = Object.freeze({
         },
         // Qatar 1
         {
-            answer: ["doh"],
+            answer: ["aa1745syvrdoh"],
             next: "veryhot",
             current: "letsfly.html"
         },
@@ -92,7 +92,7 @@ module.exports = Object.freeze({
         },
         // Brazil 1
         {
-            answer: ["gru"],
+            answer: ["aa1534syvrgru"],
             next: "verydamp",
             current: "letsfly.html"
         },
@@ -129,13 +129,13 @@ module.exports = Object.freeze({
         },
         // Atlanta 1
         {
-            answer: ["atl"],
+            answer: ["aa1298syvratl"],
             next: "metro",
             current: "letsfly.html"
         },
         // Atlanta 2
         {
-            answer: ["7743"],
+            answer: ["24372106"],
             next: "drinkaboutit",
             current: "metro.html"
         },
